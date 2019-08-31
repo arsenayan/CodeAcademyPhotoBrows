@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashscreen"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_viewLoadingLogin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="light.json"
+            app:lottie_loop="true"
+            tools:ignore="MissingConstraints">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/edit_text_login"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Write your login here"
+            android:textColorHint="#ffff"
+             android:textColor="#ffff">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Write your Password here"
+            android:textColorHint="#ffff"
+            android:textColor="#ffff"
+            android:inputType="textPassword">
+
+        </EditText>
+        <Button
+            android:id="@+id/letsGoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="log in"
+            android:background="@drawable/btnshape"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
