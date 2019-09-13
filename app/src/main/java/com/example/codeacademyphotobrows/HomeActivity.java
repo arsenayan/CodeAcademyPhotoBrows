@@ -8,6 +8,7 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toolbar;
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ public class HomeActivity extends AppCompatActivity {
     private RecyclerView numberList;
     private ImageAdapter imageAdapter;
 
-
+private     Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,9 @@ public class HomeActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_home);
         numberList= findViewById(R.id.recycleimageid);
+     /*  toolbar =  findViewById(R.id.toolbarID);
+        setSupportActionBar(toolbar);
+*/
         RecyclerView.LayoutManager layoutManager = new RecyclerView.LayoutManager() {
             @Override
             public RecyclerView.LayoutParams generateDefaultLayoutParams() {
@@ -39,5 +43,8 @@ public class HomeActivity extends AppCompatActivity {
         Cursor cursor = null;
 
 
+
     }
+
+
 }
