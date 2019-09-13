@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     >
     <item
-
-        android:orderInCategory="100"
-        android:title="log out" />
+          android:id="@+id/itemLogeOut"
+        android:orderInCategory="50"
+        android:title="log out/ Log out" />
 </menu>
