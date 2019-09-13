@@ -26,7 +26,7 @@ private Button button;
         });
     }
     public void openActivityForHome(){
-        Intent intent=new Intent(this,HomeActivity.class);
+        Intent intent=new Intent(this,HomeActivityThe.class);
         startActivity(intent);
 
     }

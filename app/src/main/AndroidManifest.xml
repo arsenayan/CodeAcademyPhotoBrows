@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SecondHome"></activity>
+        <activity
+            android:name=".HomeActivityThe"
+            android:label="@string/title_activity_home_the"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">

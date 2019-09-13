@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.ContentResolver;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toolbar;
@@ -16,8 +18,8 @@ public class HomeActivity extends AppCompatActivity {
     private RecyclerView imageitem;
     private RecyclerView numberList;
     private ImageAdapter imageAdapter;
+private Toolbar toolbar;
 
-private     Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +27,8 @@ private     Toolbar toolbar;
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_home);
         numberList= findViewById(R.id.recycleimageid);
-     /*  toolbar =  findViewById(R.id.toolbarID);
-        setSupportActionBar(toolbar);
-*/
+
+
         RecyclerView.LayoutManager layoutManager = new RecyclerView.LayoutManager() {
             @Override
             public RecyclerView.LayoutParams generateDefaultLayoutParams() {
@@ -46,5 +47,9 @@ private     Toolbar toolbar;
 
     }
 
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_exit,menu);
+        return true;
+    }
 }
